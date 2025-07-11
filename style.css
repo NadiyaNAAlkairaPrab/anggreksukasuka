@@ -1,0 +1,152 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #fff8f4;
+  color: #5a3d2b;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 3px solid #e1cfc5;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav {
+  background-color: #ffebe3;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #e1cfc5;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a3d2b;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8d4a33;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+  color: #7e4b36;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #f5e6dc;
+  text-align: center;
+  padding: 15px;
+  color: #5a3d2b;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Kartu Produk */
+.kartu-produk {
+  background-color: #ffffff;
+  border: 1px solid #e1cfc5;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+
+.kartu-produk img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.kartu-produk a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #66bb6a;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.kartu-produk a:hover {
+  background-color: #4cae58;
+}
+
+/* Galeri Grid */
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.galeri-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+/* Animasi Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMove 1s ease-out forwards;
+}
+
+@keyframes fadeInMove {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover efek pada gambar */
+.galeri-grid img:hover,
+.kartu-produk img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Hover efek pada tombol */
+.kartu-produk a:hover {
+  background-color: #4cae58;
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
